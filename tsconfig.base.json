@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@monorepo/common/*": ["packages/common/*"],
+      "@monorepo/mobile/*": ["packages/mobile/*"],
+      "@monorepo/web/*": ["packages/web/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "target": "ES6",
+    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ES2016.Array.Include"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  }
+}

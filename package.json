@@ -1,0 +1,24 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "mobile": "yarn workspace @monorepo/mobile",
+    "common": "yarn workspace @monorepo/common",
+    "web": "yarn workspace @monorepo/web",
+    "fresh": "rm -rf packages/*/node_modules node_modules ; yarn"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.1.0",
+    "@types/react": "^18.0.20",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-no-inline-styles": "^1.0.5",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0"
+  }
+}
